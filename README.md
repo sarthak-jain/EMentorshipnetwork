@@ -26,6 +26,4 @@ person's mentioned Dept. before they can use the website.
 - A protege once confirmed can visit Mentor profiles and send them re-
 quests, Send/ Receive Messages and Make Appointments.
 - For easy searching and Filtering of results the protege and mentor both
-suggest their Field of interest and area of expertise respectively .
-- An algorithm for matching and machine learning can then be used for
-better results.
+suggest their Field of interest and area of expertise respectively.
