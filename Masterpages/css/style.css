@@ -1,0 +1,293 @@
+@charset "utf-8"
+#formContainer{
+    width:288px;
+    height:391px;
+    margin:0 auto;
+    position:relative;
+
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+#llpprimary{
+	float: left;
+	margin-left:25%;
+	width: 50%;
+	position: relative;
+	background-color: none;
+	height: 60%;
+	min-height:350px;
+	margin-top:15%;
+	
+    resize:none;
+    z-index:9;
+}
+a , a :visited {
+	text-decoration:none;
+	outline:none;
+	color:#54a6de;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+#formContainer form{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+    /* Enabling 3d space for the transforms */
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    /* When the forms are flipped, they will be hidden */
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    /* Enabling a smooth animated transition */
+    -moz-transition:0.8s;
+    -webkit-transition:0.8s;
+    transition:0.8s;
+
+    /* Configure a keyframe animation for Firefox */
+    -moz-animation: pulse 2s infinite;
+
+    /* Configure it for Chrome and Safari */
+    -webkit-animation: pulse 2s infinite;
+}
+
+#login{
+    /*background:#d9e4db;*/
+	background: rgba(255,255,255,0.8);
+	z-index:100;
+}
+
+#login .flipLink,
+#recover .flipLink{
+	
+	/* The blue ribbon links */
+	
+	height: 65px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    
+    top: 0;
+    width: 110px;
+}
+
+#recover .flipLink{
+	right:0;
+}
+#recover{
+    /*background:#d9e4db;*/
+	background: white;
+    z-index:1;
+    opacity:0;
+
+    /* Rotating the recover password form by default */
+    -moz-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+/* Firefox Keyframe Animation */
+@-moz-keyframes pulse{
+    0%{		box-shadow:0 0 1px #008aff;}
+    50%{	box-shadow:0 0 8px #008aff;}
+    100%{	box-shadow:0 0 1px #008aff;}
+}
+
+/* Webkit keyframe animation */
+@-webkit-keyframes pulse{
+    0%{		box-shadow:0 0 1px #008aff;}
+    50%{	box-shadow:0 0 10px #008aff;}
+    100%{	box-shadow:0 0 1px #008aff;}
+}
+#formContainer.flipped #login{
+
+    opacity:0;
+
+    /**
+     * Rotating the login form when the
+     * flipped class is added to the container
+     */
+
+    -moz-transform:rotateY(-180deg);
+    -webkit-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+}
+
+#formContainer.flipped #recover{
+
+    opacity:1;
+
+    /* Rotating the recover div into view */
+    -moz-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+}
+
+.butn {
+	-moz-box-shadow:inset 0px -1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px -1px 0px 0px #caefab;
+	box-shadow:inset 0px -1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #74ff03) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #74ff03 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#74ff03');
+	background-color:#77d42a;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:1px solid #268a16;
+	margin-top:10px;
+	margin-left:5px;
+	display:inline-block;
+	color:#306108;
+	font-family:Verdana, Helvetica;
+	font-size:19px;
+	font-weight:bold;
+	padding:6px 29px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+}.butn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #74ff03), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #74ff03 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74ff03', endColorstr='#77d42a');
+	background-color:#74ff03;
+}.butn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+.mainhead
+{
+    
+    margin-top:10px;
+	margin-left:20px;
+	padding:0;
+	float:left;
+	font-size:30px;
+	color:#0d4f9f;
+	text-transform:none;
+	font-family: 'Abril Fatface', cursive;
+    font-weight:normal;
+	text-align: center;
+    letter-spacing: 4px;
+    position: relative;
+}
+h1
+{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .7), 0px 2px 0 rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    text-align: center;
+    color: #666;
+    margin: 0 0 30px 0;
+    letter-spacing: 4px;
+    font: normal 26px/1 Verdana, Helvetica;
+    position: relative;
+}
+
+h1:after, h1:before
+{
+    background-color: #777;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 120px;   
+}
+
+h1:after
+{ 
+    background-image: -webkit-gradient(linear, left top, right top, from(#777), to(#fff));
+    background-image: -webkit-linear-gradient(left, #777, #fff);
+    background-image: -moz-linear-gradient(left, #777, #fff);
+    background-image: -ms-linear-gradient(left, #777, #fff);
+    background-image: -o-linear-gradient(left, #777, #fff);
+    background-image: linear-gradient(left, #777, #fff);      
+    right: 0;
+}
+
+h1:before
+{
+    background-image: -webkit-gradient(linear, right top, left top, from(#777), to(#fff));
+    background-image: -webkit-linear-gradient(right, #777, #fff);
+    background-image: -moz-linear-gradient(right, #777, #fff);
+    background-image: -ms-linear-gradient(right, #777, #fff);
+    background-image: -o-linear-gradient(right, #777, #fff);
+    background-image: linear-gradient(right, #777, #fff);
+    left: 0;
+}
+
+
+
+.ribbon-wrapper-green {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index:100;
+}
+
+.ribbon-green {
+  font: 12px Sans-Serif;
+  color: #74bbfb;
+  text-align:center;
+  white-space: nowrap;
+  
+  
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  
+  position: relative; 
+  
+  padding: 8px 0;
+  left: -5px;
+  top: 0px;
+  width: 240px;
+  background-color: #BFDC7A;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45)); 
+  background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:    -moz-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:     -ms-linear-gradient(top, #BFDC7A, #8EBF45); 
+  background-image:      -o-linear-gradient(top, #BFDC7A, #8EBF45); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}
+.btngrp{
+	position:relative;
+	float:left;
+	width:60%;
+	height:20%;
+	margin-top:50px;
+	margin-left:40%;
+	
+}

@@ -1,0 +1,212 @@
+@charset "utf-8";
+h2{
+	position:relative;
+	float:left;
+	padding:10px;
+	margin-top:10px;
+	margin-left:15px;
+	
+}
+h3{
+	position:relative;
+	float:left;
+	padding:2px;
+	margin-top:3%;
+	margin-left:14%;
+	width:100%;
+	font-size:90%;
+	
+}
+#cemail,#cpass{
+	position:relative;
+	float:left;
+	padding:10px;
+	margin-top:20px;
+	margin-left:15px;
+	width:30%;
+}
+.cemail,.cpass{
+	position:relative;
+	float:left;
+	padding:10px;
+	margin-top:20px;
+	margin-left:15px;
+	width:30%;
+}
+#mailid{
+	position:relative;
+	float:left;
+	width:100%;
+}
+.mailid{
+	position:relative;
+	float:left;
+	width:100%;
+}
+#passid{
+	position: relative;
+	float: left;
+	width:100%;
+}
+h4{
+	position:relative;
+	float:left;
+	padding:2px;
+	margin-top:20px;
+	margin-left:5%;
+	
+}
+h5{
+	position:relative;
+	float:left;
+	padding:2px;
+	margin-top:2px;
+	margin-left:15px;
+	width:100%;
+	
+}
+.s-featuring-textbox {
+    border: 1px solid #EEEEEE;
+	background: none repeat scroll 0 0 rgba(201, 208, 222, 0.5);
+    box-shadow: none;
+    color: #535353;
+    display: block;
+	font-family: "Georgia",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+	line-height: 1.0em;
+    resize: none;
+	position:relative;
+	margin-top:20px;
+	margin-right:5%;
+    float: right;
+	width: 50%;
+    padding: 10px;
+	
+}
+.su-featuring-textbox {
+    border: 1px solid #EEEEEE;
+	background: none repeat scroll 0 0 rgba(201, 208, 222, 0.5);
+    box-shadow: none;
+    color: #535353;
+    display: block;
+	font-family: "Georgia",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+	line-height: 1.0em;
+    resize: none;
+	position:relative;
+	margin-top:10px;
+	margin-right:15%;
+    float: right;
+	width: 50%;
+    padding: 10px;
+	
+}
+.btn{
+	position:relative;
+	float:left;
+	resize:none;
+	color:#535353;
+	background: none repeat scroll 0 0 rgba(200,125,244,0.7);
+	box-shadow:none;
+	display:block;
+	font-family: "Georgia",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1em;
+	padding:10px;
+	width:50%;
+	margin-top:30px;
+	margin-left:25%;
+	margin-bottom:10px;
+}
+.subtn{
+	position:relative;
+	float:left;
+	resize:none;
+	color:#535353;
+	background: none repeat scroll 0 0 rgba(200,125,244,0.7);
+	box-shadow:none;
+	display:block;
+	font-family: "Georgia",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1em;
+	padding:10px;
+	width:15%;
+	margin-top:10px;
+	margin-left:68%;
+	margin-bottom:15px;
+}
+
+.msui{
+	position: relative;
+	float: left;
+	margin:2%;
+	background-color:white;
+	width:95%;
+	z-index:999;
+	border-radius:15px;
+	min-height:50%;
+	resize:none;
+}
+.s-featuring-date {
+    border: 1px solid #EEEEEE;
+	background: none repeat scroll 0 0 rgba(201, 208, 222, 0.5);
+    box-shadow: none;
+    color: #535353;
+    display: block;
+	font-family: "Georgia",serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+	line-height: 1.0em;
+    resize: none;
+	position:relative;
+	margin-top:20px;
+	margin-right:5%;
+    float: left;
+	width: auto;
+    padding: 10px;
+	
+}
+.dates{
+	position:relative;
+	float:right;
+	margin-right:8%;
+	margin-bottom:5px;
+	width:50%;
+}
+.date{
+	position:relative;
+	float:left;
+	margin-left:24%;
+	
+	width:50%;
+}
+#radiosex{
+	position:relative;
+	float:left;
+	color: #535353;
+    display: block;
+	font-family: "Georgia",serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+	line-height: 1.0em;
+    resize: none;
+	margin-top:20px;
+	width:50%;
+	margin-left:20%;
+	
+}
+.radsex{
+	position:relative;
+	float:left;
+	margin-left:25%;
+}
